@@ -1,0 +1,63 @@
+
+/*color de fondo de todas las pantallas*/
+body{
+    background-color: #FFF5E6;
+    font-family: 'Caesar Dressing', cursive;
+    ;
+}
+
+/*Texto de bienvenida*/
+h1 {
+    color:#D32929;
+    text-align: center;
+    font-size: 60px;    
+    font-family: 'Caesar Dressing', cursive;
+}
+
+/*Logo*/
+p1 {
+    color:#7F2122;
+    text-align: right;
+    font-size: 300%;
+    font-family: 'Caesar Dressing', cursive;    
+}
+
+/*Botón de COMENZAR*/
+.button {
+    display: inline-block;
+    background-color: blue;
+    color:#F8E9E9;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    margin-top: -150px;
+    width: 400px;
+    border: solid 4px #ffffff;
+    border-radius: 40px;
+}
+
+input[type="image"]{
+    width: 300px;
+    height: 250px;
+    margin: 0px auto;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    border-radius: 50px;
+    transition: all 100ms;
+}
+
+/*Casilla Escribe tu nombre aquí*/
+.textBox {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: aliceblue;
+    color: black;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    margin: 5px;
+    width: 360px;
+}

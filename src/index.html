@@ -4,11 +4,34 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+        <!--Texto de bienvenida-->
+        <h1>Te damos la bienvenida al</h1> 
+
+        <p1>(DES)CIFRADOR CAESAR</p1>
+
+        <!--Imagen de Julio César 1-->
+        <img src="Julius Caesar 4.png" />   
+        <br />      
+
+        <p>Gaius Iulius Caesar, 110 a.C. - 44 d.C.</p>
+
+        <!--Casilla para escribir nombre del jugador-->
+        <input type="text" placeholder="¿Cómo te llamas?" id="txtNombre" class="textBox">
+        <br />
+        <!--Botón rojo de COMENZAR-->
+        <input type="button" value="COMENZAR" class="botonesTrivia" onclick="AVE ()"  />        
     </div>
     <script src="index.js" type="module"></script>
+
+      <!--Texto de bienvenida con nombre del jugador-->
+      <div id="FormularioBienvenida" style="display:none;text-align:center">
+        <marquee><input type="text" id="txtTablaBienvenida" class="BienvenidaTrivia"></marquee>     
+      </div>
+
   </body>
 </html>
