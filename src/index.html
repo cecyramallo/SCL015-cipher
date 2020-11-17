@@ -3,35 +3,108 @@
   <head>
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+    <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div id="root">
-        <!--Texto de bienvenida-->
+    <div id="Page1">
+        <!--Welcome text-->
         <h1>Te damos la bienvenida al</h1> 
 
-        <p1>(DES)CIFRADOR CAESAR</p1>
+        <h2>(DES)CIFRADOR CAESAR</h2>
 
-        <!--Imagen de Julio César 1-->
+    </div>
+
+    <div id="Explanation">
+        <!--What is this?-->
+        <p2>El cifrado César es una técnica para encriptar o desencriptar mensajes, donde una letra del alfabeto es reemplazada 
+          por otra que se encuentra algunas posiciones más adelante. Por ejemplo, desplazando 5 posiciones, la A se convertiría en F, 
+          la B en G, etc.
+          Es útil si quieres ocultar información o enviar mensajes en código. 
+          Aquí podrás jugar a cifrar y descrifrar mensajes, a la vez que conoces un poco más sobre Julio César y su historia.
+        </p2>
+    </div>
+    
+    <div id="PhotoAndBio">
+        <!--Julius Caesar image 1-->
         <img src="Julius Caesar 4.png" />   
         <br />      
 
-        <p>Gaius Iulius Caesar, 110 a.C. - 44 d.C.</p>
-
-        <!--Casilla para escribir nombre del jugador-->
-        <input type="text" placeholder="¿Cómo te llamas?" id="txtNombre" class="textBox">
+        <p3>Gaius Iulius Caesar, 110 a.C. - 44 d.C.</p3>
+    </div>
+    
+    <div class="Form">
+        <!--Casilla para escribir nombre-->
+        <input type="text" placeholder="Escribe tu nombre" id="txtNombre" class="textBox">
         <br />
-        <!--Botón rojo de COMENZAR-->
+        <!--Botón de COMENZAR-->   
         <input type="button" value="COMENZAR" class="botonesTrivia" onclick="AVE ()"  />        
     </div>
+        
+
     <script src="index.js" type="module"></script>
 
       <!--Texto de bienvenida con nombre del jugador-->
       <div id="FormularioBienvenida" style="display:none;text-align:center">
         <marquee><input type="text" id="txtTablaBienvenida" class="BienvenidaTrivia"></marquee>     
-      </div>
+    </div>
 
+    <h1>¡AVE, VSVARIO!</h1>
+    <p3>Inserta tu mensaje. Por favor, utiliza sólo mayúsculas, sin la letra Ñ</p3>
+
+    <form>
+      <textarea></textarea>
+      <p2>¿Cuántos caracteres quieres desplazar?<p2>
+      <input type='number' min='1' max='26'>
+      <p3>Inserta un número del 1 al 26</p3>
+      
+    <input type='submit' value='Cifrar'>
+    <input type='submit' value='Descifrar'>
+    </form>
+
+     <script src='script.js'></script>    
+
+  <div id="Datum1" style="display:block;text-align:center;max-width:100%">
+    <!--Datum1 text-->
+    <h3>¿Sabías que Julio César fue un político y general romano, 
+      fundamental para la transición de la República al Imperio? </h3>
+      <!--Datum 1 image-->
+    <img src="Julius Caesar 2.jpg" />   
+    </div>
+
+    <h1>¡AD INFINITVM!</h1>
+    <p3>Aquí tienes tu mensaje cifrado</p3>
+
+    <input type='submit' value='Nuevo mensaje'>
+    </form>
+
+  <script src='script.js'></script>    
+
+  <div id="Datum2" style="display:block;text-align:center;max-width:100%">
+    <!--Datum2 text-->
+    <h3>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
+      con fines militares, empleando 3 caracteres de desplazamiento?</h3>
+      <!--Datum 1 image-->
+    <img src="Julius Caesar 3.jpg" />   
+    </div>
+
+        <h1>¡AD INFINITVM!</h1>
+    <p3>Aquí tienes tu mensaje descifrado</p3>
+
+    <input type='submit' value='Nuevo mensaje'>
+    </form>
+
+  <script src='script.js'></script>    
+
+  <div id="Datum2" style="display:block;text-align:center;max-width:100%">
+    <!--Datum2 text-->
+    <h3>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
+      con fines militares, empleando 3 caracteres de desplazamiento?</h3>
+      <!--Datum 1 image-->
+    <img src="Julius Caesar 3.jpg" />   
+    </div>
+ 
   </body>
 </html>
