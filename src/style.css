@@ -22,7 +22,7 @@ h2 {
 h3 {
     color:#7F2122;
     background-color: #CAC198;
-    text-align: left;
+    text-align: center;
     font-size: 20px;    
     font-family: 'Caesar Dressing';
 }
@@ -31,19 +31,22 @@ h3 {
 #Explanation{
     color:#7F2122;
     text-align: start;
-    font-size: 100%;
+    font-size: 120%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
-    width: 800px;
-    padding-left: 50px;
+    width: 700px;
+    padding-left: 5%;
 }
 
-.PhotoAndBio {
-    text-align: center;
+figure {
+    text-align: right;
+    padding-right: 10%;
+    padding-inline-end: 10%;
     font-family: 'Caesar Dressing';
+    color: #D32929;
 }
 
 /*Image 1*/
-#PhotoAndBio img{
+figure img{
     width: 200px;
     height: 200px;
     margin-top: -20%;
@@ -62,4 +65,23 @@ p3 {
     text-align: end;
     font-size: 100%;
     font-family: 'Caesar Dressing';    
+}
+
+#Page2 {
+    display: none;
+} 
+
+#Page3 {
+    display: none;
+} 
+
+#Page4 {
+    display: none;
+} 
+
+footer {
+    text-align: center;
+    font-family: 'Caesar Dressing';
+    font-size: smaller;
+    margin-top: 5%;
 }

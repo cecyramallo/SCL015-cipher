@@ -2,69 +2,64 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="'Este es un cifrador y descifrador César">
     <title>Caesar Cipher</title>
-    <script src="index.js"></script>
     <link href="style.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <div id="Page1">
+    <section id="Page1">
         <!--Welcome text-->
         <h1>Te damos la bienvenida al</h1> 
 
         <h2>(DES)CIFRADOR CAESAR</h2>
 
-    </div>
+        <div id="Explanation">
+          <!--What is this?-->
+          <p2>El cifrado César es una técnica para encriptar o desencriptar mensajes, donde una letra del alfabeto es reemplazada 
+            por otra que se encuentra algunas posiciones más adelante. Por ejemplo, desplazando 5 posiciones, la A se convertiría en F, 
+            la B en G, etc.
+            Es útil si quieres ocultar información o enviar mensajes en código. 
+            Aquí podrás jugar a cifrar y descrifrar mensajes, a la vez que conoces un poco más sobre Julio César y su historia.
+          </p2>
+      </div>
+      
+          <!--Julius Caesar image 1-->
+          <figure>
+              <img src="Julius Caesar 4.png" alt="Retrato de Julio César"/> 
+              <figurecaption>Gaius Iulius Caesar, 110 a.C. - 44 d.C.</figurecaption>
+           
+      <div class="Form">
+          <!--Casilla para escribir nombre-->
+          <input type="text" placeholder="Escribe tu nombre" id="nombre" class="textBox">
+          <br />
+          <!--Botón de COMENZAR-->   
+          <input type="button" value="COMENZAR" id="botonComenzar"/>        
+      </div>        
 
-    <div id="Explanation">
-        <!--What is this?-->
-        <p2>El cifrado César es una técnica para encriptar o desencriptar mensajes, donde una letra del alfabeto es reemplazada 
-          por otra que se encuentra algunas posiciones más adelante. Por ejemplo, desplazando 5 posiciones, la A se convertiría en F, 
-          la B en G, etc.
-          Es útil si quieres ocultar información o enviar mensajes en código. 
-          Aquí podrás jugar a cifrar y descrifrar mensajes, a la vez que conoces un poco más sobre Julio César y su historia.
-        </p2>
-    </div>
-    
-    <div id="PhotoAndBio">
-        <!--Julius Caesar image 1-->
-        <img src="Julius Caesar 4.png" />   
-        <br />      
+    </section>
 
-        <p3>Gaius Iulius Caesar, 110 a.C. - 44 d.C.</p3>
-    </div>
-    
-    <div class="Form">
-        <!--Casilla para escribir nombre-->
-        <input type="text" placeholder="Escribe tu nombre" id="txtNombre" class="textBox">
-        <br />
-        <!--Botón de COMENZAR-->   
-        <input type="button" value="COMENZAR" class="botonesTrivia" onclick="AVE ()"  />        
-    </div>
-        
-
-    <script src="index.js" type="module"></script>
-
+    <section id="Page2">
       <!--Texto de bienvenida con nombre del jugador-->
       <div id="FormularioBienvenida" style="display:none;text-align:center">
         <marquee><input type="text" id="txtTablaBienvenida" class="BienvenidaTrivia"></marquee>     
     </div>
 
-    <h1>¡AVE, VSVARIO!</h1>
+    <h1>¡AVE,</h1>
+    <p id="printHere"></p>
     <p3>Inserta tu mensaje. Por favor, utiliza sólo mayúsculas, sin la letra Ñ</p3>
 
     <form>
-      <textarea></textarea>
+      <textarea id="originalMessage"></textarea>
       <p2>¿Cuántos caracteres quieres desplazar?<p2>
-      <input type='number' min='1' max='26'>
+      <input id="offsetNumber"  type='number' min='1' max='26'>
       <p3>Inserta un número del 1 al 26</p3>
       
-    <input type='submit' value='Cifrar'>
-    <input type='submit' value='Descifrar'>
+    <input type='button' value='Cifrar' id="botonCifrar">
+    <input type='button' value='Descifrar' id="botonDescifrar">
     </form>
-
-     <script src='script.js'></script>    
 
   <div id="Datum1" style="display:block;text-align:center;max-width:100%">
     <!--Datum1 text-->
@@ -74,29 +69,33 @@
     <img src="Julius Caesar 2.jpg" />   
     </div>
 
+  </section>
+
+  <section id="Page3">
+
     <h1>¡AD INFINITVM!</h1>
     <p3>Aquí tienes tu mensaje cifrado</p3>
 
-    <input type='submit' value='Nuevo mensaje'>
+    <input type='button' value='Nuevo mensaje' id="botonNuevoMensaje1">
     </form>
 
-  <script src='script.js'></script>    
-
-  <div id="Datum2" style="display:block;text-align:center;max-width:100%">
+   <div id="Datum2" style="display:block;text-align:center;max-width:100%">
     <!--Datum2 text-->
     <h3>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
       con fines militares, empleando 3 caracteres de desplazamiento?</h3>
       <!--Datum 1 image-->
-    <img src="Julius Caesar 3.jpg" />   
+    <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César "/>   
     </div>
 
-        <h1>¡AD INFINITVM!</h1>
+  </section>  
+
+  <section id="Page4">
+
+    <h1>¡AD INFINITVM!</h1>
     <p3>Aquí tienes tu mensaje descifrado</p3>
 
-    <input type='submit' value='Nuevo mensaje'>
+    <input type='button' value='Nuevo mensaje' id="botonNuevoMensaje2">
     </form>
-
-  <script src='script.js'></script>    
 
   <div id="Datum2" style="display:block;text-align:center;max-width:100%">
     <!--Datum2 text-->
@@ -105,6 +104,12 @@
       <!--Datum 1 image-->
     <img src="Julius Caesar 3.jpg" />   
     </div>
- 
+  
+  </section>
+  
+  <script src="index.js"></script>
+
+  <footer>@cricy21 2020</footer>
+
   </body>
 </html>
