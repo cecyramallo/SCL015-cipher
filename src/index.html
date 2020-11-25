@@ -11,64 +11,67 @@
 
   <body>
     <section id="Page1">
-        <!--Welcome text-->
+        <!--Welcome-->
         <h1>Te damos la bienvenida al</h1> 
 
+        <!--App name-->
         <h2>(DES)CIFRADOR CAESAR</h2>
 
-        <div id="Explanation">
-          <!--What is this?-->
-          <p2>El cifrado César es una técnica para encriptar o desencriptar mensajes, donde una letra del alfabeto es reemplazada 
-            por otra que se encuentra algunas posiciones más adelante. Por ejemplo, desplazando 5 posiciones, la A se convertiría en F, 
-            la B en G, etc.
-            Es útil si quieres ocultar información o enviar mensajes en código. 
-            Aquí podrás jugar a cifrar y descrifrar mensajes, a la vez que conoces un poco más sobre Julio César y su historia.
-          </p2>
-      </div>
+        <!--Description-->
+        <article id="Explanation">
+          El cifrado César es una técnica para encriptar o desencriptar mensajes, donde una letra del alfabeto es reemplazada
+          por otra que se encuentra algunas posiciones más adelante. Por ejemplo, desplazando 5 posiciones, la A se convertiría en F, 
+          la B en G, etc.
+          <br />
+          <br />
+          Es útil si quieres ocultar información o enviar mensajes en código. 
+          <br />
+          <br />
+          Aquí podrás jugar a cifrar y descrifrar mensajes, a la vez que conoces un poco más sobre Julio César y su historia.
+        </article>
       
-          <!--Julius Caesar image 1-->
-          <figure>
-              <img src="Julius Caesar 4.png" alt="Retrato de Julio César"/> 
-              <figurecaption>Gaius Iulius Caesar, 110 a.C. - 44 d.C.</figurecaption>
+        <!--Julius Caesar image 1-->
+        <figure>
+          <img src="Julius Caesar 4.png" alt="Retrato de Julio César"/> 
+          <figurecaption>Gaius Iulius Caesar, 110 a.C. - 44 a.C.</figurecaption>
+        </figure>    
            
       <div class="Form">
-          <!--Casilla para escribir nombre-->
-          <input type="text" placeholder="Escribe tu nombre" id="nombre" class="textBox">
+          <!--Space for writing user's name-->
+          <input type="text" placeholder="Escribe tu nombre" id="userName" class="textBox">
           <br />
-          <!--Botón de COMENZAR-->   
-          <input type="button" value="COMENZAR" id="botonComenzar"/>        
+          <!--START button-->   
+          <input type="button" value="COMENZAR" id="startButton"/>        
       </div>        
-
     </section>
 
     <section id="Page2">
-      <!--Texto de bienvenida con nombre del jugador-->
-      <div id="FormularioBienvenida" style="display:none;text-align:center">
-        <marquee><input type="text" id="txtTablaBienvenida" class="BienvenidaTrivia"></marquee>     
-    </div>
+      <!--Text to say hi to our user-->
 
-    <h1>¡AVE,</h1>
-    <p id="printHere"></p>
-    <p3>Inserta tu mensaje. Por favor, utiliza sólo mayúsculas, sin la letra Ñ</p3>
-
+    <h3>¡AVE, USUARIO!</h3>
+    <p>Inserta tu mensaje. Por favor, utiliza sólo mayúsculas, sin la letra Ñ</p>
+    
     <form>
       <textarea id="originalMessage"></textarea>
-      <p2>¿Cuántos caracteres quieres desplazar?<p2>
+      <p>¿Cuántos caracteres quieres desplazar?</p>
+      <p>Inserta un número del 1 al 150</p>
       <input id="offsetNumber"  type='number' min='1' max='26'>
-      <p3>Inserta un número del 1 al 26</p3>
-      
-    <input type='button' value='Cifrar' id="botonCifrar">
-    <input type='button' value='Descifrar' id="botonDescifrar">
+      <br />      
+      <input type='button' value='Cifrar' id="botonCifrar" onclick="code()">
+      <input type='button' value='Descifrar' id="botonDescifrar" onclick="decode()">
+      <br />    
+      <textarea id="newMessage"></textarea>
     </form>
 
-  <div id="Datum1" style="display:block;text-align:center;max-width:100%">
-    <!--Datum1 text-->
-    <h3>¿Sabías que Julio César fue un político y general romano, 
-      fundamental para la transición de la República al Imperio? </h3>
-      <!--Datum 1 image-->
-    <img src="Julius Caesar 2.jpg" />   
-    </div>
+      
 
+      <!--Julius Caesar image 2-->
+        <figure>
+          <img src="Julius Caesar 2.jpg" alt="Retrato de Julio César mirando hacia adelante"/> 
+            <article>¿Sabías que Julio César fue un político y general romano, 
+            fundamental para la transición de la República al Imperio?</article>
+        </figure> 
+      
   </section>
 
   <section id="Page3">
@@ -81,8 +84,8 @@
 
    <div id="Datum2" style="display:block;text-align:center;max-width:100%">
     <!--Datum2 text-->
-    <h3>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
-      con fines militares, empleando 3 caracteres de desplazamiento?</h3>
+    <h4>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
+      con fines militares, empleando 3 caracteres de desplazamiento?</h4>
       <!--Datum 1 image-->
     <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César "/>   
     </div>
@@ -99,8 +102,8 @@
 
   <div id="Datum2" style="display:block;text-align:center;max-width:100%">
     <!--Datum2 text-->
-    <h3>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
-      con fines militares, empleando 3 caracteres de desplazamiento?</h3>
+    <h4>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
+      con fines militares, empleando 3 caracteres de desplazamiento?</h4>
       <!--Datum 1 image-->
     <img src="Julius Caesar 3.jpg" />   
     </div>
