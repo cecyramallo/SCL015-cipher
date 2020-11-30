@@ -14,7 +14,7 @@ function code(){
     console.log(offset);
     //Declare another variable for the final message
     let finalMessage = ""
-    //Declare a for cicle
+    //Declare a for loop
     for (let i = 0; i < originalMessage.length; i++) {
     //Obtain the ASCII code
     let ascii = originalMessage.charCodeAt(i);
@@ -22,7 +22,7 @@ function code(){
     //Apply the Math formula to obtain the character's new ASCII code
     let newAscii = (ascii -65 + offset) % 26 +65;
     console.log (newAscii);
-    //Declare a conditional for the space character
+    //Declare an if conditional for the space character
     if (ascii === 32){
         newAscii = 32;
     }
@@ -48,7 +48,7 @@ function decode(){
     console.log(offset);
     //Declare another variable for the final message
     let finalMessage = ""
-    //Declare a for cicle
+    //Declare a for loop
     for (let i = 0; i < originalMessage.length; i++) {
     //Obtain the ASCII code
     let ascii = originalMessage.charCodeAt(i);
@@ -56,7 +56,7 @@ function decode(){
     //Apply the Math formula to obtain the character's new ASCII code
     let newAscii = (ascii +65 - offset) % 26 +65;
     console.log (newAscii);
-    //Declare a conditional for the space character
+    //Declare an if conditional for the space character
     if (ascii === 32){
         newAscii = 32;
     }

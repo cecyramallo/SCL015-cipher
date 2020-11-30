@@ -4,7 +4,7 @@ body{
 }
 
 /*Welcome text*/
-h1 {
+#MainTitle {
     color:#D32929;
     text-align: center;
     font-size: 200%;    
@@ -12,28 +12,21 @@ h1 {
 }
 
 /*App name*/
-h2 {
+#Logo {
     color:#7F2122;
     text-align: center;
-    padding-top: 0%;
     font-size: 350%;
-    font-family: 'Caesar Dressing';    
+    font-family: 'Caesar Dressing'; 
+    text-shadow: 2px 3px 2px #FACD1E;   
 }
 
-h3 {
+/*Text to say hi, incluiding user's name*/
+#Greeting {
     color:#D32929;
     text-align: center;
-    font-size: 60px;    
+    font-size: 50px;    
     font-family: 'Caesar Dressing';
-    padding-top: -50%;
-}
-
-h4 {
-    color:#7F2122;
-    background-color: #CAC198;
-    text-align: center;
-    font-size: 20px;    
-    font-family: 'Caesar Dressing';
+    padding-top: 0%;
 }
 
 /*Description*/
@@ -42,11 +35,12 @@ h4 {
     text-align: start;
     font-size: 100%;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  
-    width: 780px;
-    padding-left: 5%;
+    width: 750px;
+    padding-left: 8%;
 }
 
-figure {
+/*Image 1*/
+#figure1 {
     text-align: right;
     padding-right: 300%;
     padding-inline-end: 5%;
@@ -54,14 +48,62 @@ figure {
     color: #D32929;
 }
 
-/*Image 1*/
-figure img{
+#figure1 img{
     width: 200px;
     height: 200px;
     margin-top: -20%;
     margin-left: 80%;
-    display: flexbox;
     box-shadow: 0px 0px 15px #CAC198;
+}
+
+/*Image 2*/
+#figure2 {
+    text-align: left;
+    width: 10%;
+    font-family: 'Caesar Dressing';
+    color: #D32929;
+}
+
+#figure2 img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 15px #CAC198;
+}
+
+/*Image 3*/
+#figure3 {
+    text-align: right;
+
+    font-family: 'Caesar Dressing';
+    color: #D32929;
+}
+
+#figure3 img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 15px #CAC198;
+}
+
+#userName {
+    display: inline-block;
+    border-radius: 20px;
+    background-color: #E5DBB7;
+    border: solid 3px #CAC198;
+    color: #7F2122;
+    text-align: center;
+    font-size: 20px;
+    padding: 15px;
+    margin: 5px;
+    height: 0px;
+    width: 300px;
+    font-family: 'Caesar Dressing';
+}
+
+p {
+    color: #7F2122;
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Caesar Dressing';    
 }
 
 .Form {
@@ -70,24 +112,53 @@ figure img{
     padding-block-end: -30%;
 }
 
-.textBox {
+.button{
     display: inline-block;
-    border-radius: 20px;
-    background-color: #E5DBB7;
-    color: #7F2122;
+    background-color: #CAC198;
+    color: #D32929;
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
     margin: 5px;
-    height: 0px;
-    width: 300px;
+    width: 250px;
+    font-size: 17px;
+    padding: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+    border: solid 4px #FACD1E;
+    border-radius: 40px;
+    font-family: 'Caesar Dressing';
 }
 
-p {
+#cipherForm {
+    display: inline-flexbox;
+    text-align: center;
+    padding-block-end: -30%;
+}
+
+#originalMessage{
+    width: 45%;
+    background-color: #E5DBB7;
+    text-align: center;
     color: #7F2122;
-    text-align: left;
-    font-size: 100%;
-    font-family: 'Caesar Dressing';    
+    border: solid 3px #CAC198;
+    border-radius: 20px;
+}
+
+#offsetNumber{
+    width: 5%;
+    background-color: #E5DBB7;
+    text-align: center;
+    color: #7F2122;
+    border: solid 3px #CAC198;
+    border-radius: 20px;
+}
+
+#newMessage{
+    width: 45%;
+    background-color: #E5DBB7;
+    text-align: center;
+    color: #7F2122;
+    border: solid 3px #CAC198;
+    border-radius: 20px;
 }
 
 #Page2 {
@@ -104,7 +175,16 @@ p {
 
 footer {
     text-align: center;
+    color: #7F2122;
     font-family: 'Caesar Dressing';
     font-size: smaller;
     margin-top: 2%;
 }
+
+/*h4 {
+    color:#7F2122;
+    background-color: #CAC198;
+    text-align: center;
+    font-size: 20px;    
+    font-family: 'Caesar Dressing';
+}*/

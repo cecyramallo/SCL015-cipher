@@ -1,4 +1,4 @@
-const cipher = {
+/*const cipher = {
 
   //Declaración de letras del alfabeto
   const alphabet = [
@@ -30,4 +30,4 @@ const cipher = {
     }
 };
 
-export default cipher;
+export default cipher;*/

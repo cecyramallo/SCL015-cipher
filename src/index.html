@@ -10,12 +10,13 @@
   </head>
 
   <body>
+    <!--First page-->
     <section id="Page1">
         <!--Welcome-->
-        <h1>Te damos la bienvenida al</h1> 
+        <h1 id="MainTitle">Te damos la bienvenida al</h1> 
 
         <!--App name-->
-        <h2>(DES)CIFRADOR CAESAR</h2>
+        <h2 id="Logo">(DES)CIFRADOR CAESAR</h2>
 
         <!--Description-->
         <article id="Explanation">
@@ -31,50 +32,64 @@
         </article>
       
         <!--Julius Caesar image 1-->
-        <figure id="=figure1">
+        <figure id="figure1">
           <img src="Julius Caesar 4.png" alt="Retrato de Julio César"/> 
           <figurecaption>Gaius Iulius Caesar, 110 a.C. - 44 a.C.</figurecaption>
         </figure>    
            
       <div class="Form">
           <!--Space for writing user's name-->
-          <input type="text" placeholder="Escribe tu nombre" id="userName" class="textBox">
+          <input type="text" placeholder="Escribe tu nombre" id="userName">
           <br />
           <!--START button-->   
-          <input type="button" value="COMENZAR" id="startButton"/>        
+          <div>
+          <input type="button" value="COMENZAR" id="startButton" class="button"/>        
+          </div>
       </div>        
     </section>
 
+    <!--Second page-->
     <section id="Page2">
-      <!--Text to say hi to our user-->
-
-    <h3>¡AVE, USUARIO!</h3>
-    <p>Inserta tu mensaje. Por favor, utiliza sólo mayúsculas, sin la letra Ñ</p>
     
-    <form>
+    <!--Greeting-->
+    <h3 id="Greeting">¡AVE, USUARIO!</h3>
+
+    <!--Form to cipher-->    
+    <form id="cipherForm">
+      <p>Inserta tu mensaje. Por favor, no utilices la letra Ñ</p>
       <textarea id="originalMessage"></textarea>
       <p>¿Cuántos caracteres quieres desplazar?</p>
       <p>Inserta un número del 1 al 150</p>
       <input id="offsetNumber"  type='number' min='1' max='26'>
-      <br />      
-      <input type='button' value='Cifrar' id="botonCifrar" onclick="code()">
-      <input type='button' value='Descifrar' id="botonDescifrar" onclick="decode()">
-      <br />    
+      <br/>
+      <br/>      
+      <input type='button' value='Cifrar' id="botonCifrar" onclick="code()" class="button">
+      <input type='button' value='Descifrar' id="botonDescifrar" onclick="decode()" class="button">
+      <br/>
+      <br/>    
+      <p>Aquí tienes tu mensaje cifrado</p>
       <textarea id="newMessage"></textarea>
     </form>
 
-      
-
       <!--Julius Caesar image 2-->
-        <figure id="=figure2">
+        <figure id="figure2">
           <img src="Julius Caesar 2.jpg" alt="Retrato de Julio César mirando hacia adelante"/> 
             <article>¿Sabías que Julio César fue un político y general romano,
             <br /> 
             fundamental para la transición de la República al Imperio?</article>
         </figure> 
+
+      <!--Julius Caesar image 3-->
+      <figure id="figure3">
+        <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César"/> 
+          <article>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución,
+            <br /> 
+            con fines militares, empleando 3 caracteres de desplazamiento?</article>
+      </figure>         
       
   </section>
 
+  <!--Third page-->
   <section id="Page3">
 
     <h1>¡AD INFINITVM!</h1>
@@ -88,19 +103,19 @@
     <h4>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
       con fines militares, empleando 3 caracteres de desplazamiento?</h4>
       <!--Datum 1 image-->
-    <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César "/>   
+    <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César"/>   
     </div>
 
   </section>  
 
+  <!--Fourth page-->
   <section id="Page4">
 
     <h1>¡AD INFINITVM!</h1>
     <p3>Aquí tienes tu mensaje descifrado</p3>
 
     <input type='button' value='Nuevo mensaje' id="botonNuevoMensaje2">
-    </form>
-
+    
   <div id="Datum2" style="display:block;text-align:center;max-width:100%">
     <!--Datum2 text-->
     <h4>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
