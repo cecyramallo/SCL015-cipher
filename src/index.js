@@ -70,7 +70,6 @@ function decode(){
     console.log(result);
 
     finalMessage += result;
-
     }
 
     document.getElementById("newMessage").innerHTML = finalMessage;
