@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="'Este es un cifrador y descifrador César">
     <title>Caesar Cipher</title>
-    <link href="style.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap" rel="stylesheet">
   </head>
 
@@ -33,7 +33,7 @@
       
         <!--Julius Caesar image 1-->
         <figure id="figure1">
-          <img src="Julius Caesar 4.png" alt="Retrato de Julio César"/> 
+          <img src="Julius Caesar 4.png" alt="Retrato de Julio César mirando al espectador"/> 
           <figurecaption>Gaius Iulius Caesar, 110 a.C. - 44 a.C.</figurecaption>
         </figure>    
            
@@ -41,7 +41,7 @@
           <!--Space for writing user's name-->
           <input type="text" placeholder="Escribe tu nombre" id="userName">
           <br />
-          <!--START button-->   
+          <!--Start button-->   
           <div>
           <input type="button" value="COMENZAR" id="startButton" class="button"/>        
           </div>
@@ -53,80 +53,48 @@
     
     <!--Julius Caesar image 2-->
       <figure id="figure2">
-        <img src="Julius Caesar 2.jpg" alt="Retrato de Julio César mirando hacia adelante"/> 
+        <img src="Julius Caesar 2.jpg" alt="Retrato de Julio César mirando hacia el horizonte"/> 
           <figurecaption>¿Sabías que Julio César fue un político y general romano,
           <br /> 
           fundamental para la transición de la República al Imperio?</figurecaption>
       </figure> 
 
-    <!--Form to cipher-->    
+    <!--Form to encode and decode-->    
     <form id="cipherForm">
-      <!--Greeting-->
+      <!--Greeting the user-->
       <h3 id="Greeting"></h3>
       <p>Inserta tu mensaje. Por favor, no utilices la letra Ñ</p>
+      <!--Specific box to write user's original message-->
       <textarea id="originalMessage"></textarea>
       <p>¿Cuántos caracteres quieres desplazar?</p>
       <p>Inserta un número del 1 al 150</p>
+      <!--Specific box to write or select an offset number-->
       <input id="offsetNumber"  type='number' min='1' max='26'>
       <br/>
-      <br/>      
-      <input type='button' value='Cifrar' id="botonCifrar" onclick="code()" class="button">
-      <input type='button' value='Descifrar' id="botonDescifrar" onclick="decode()" class="button">
+      <br/>
+      <!--Encode button-->
+      <input type='button' value='Cifrar' onclick="code()" class="button">
+      <!--Decode button-->      
+      <input type='button' value='Descifrar' onclick="decode()" class="button">
       <br/>   
       <p>Aquí tienes tu mensaje cifrado</p>
+      <!--Specific box to view coded or decoded message-->
       <textarea id="newMessage"></textarea>
     </form>
 
-      <!--Julius Caesar image 3-->
+    <!--Julius Caesar image 3-->
       <figure id="figure3">
         <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César levantando el pulgar"/> 
           <figurecaption>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución,
             <br /> 
             con fines militares, empleando 3 caracteres de desplazamiento?</figurecaption>
       </figure>         
-      
-  </section>
+    </section>
 
-    <!--Third page-->
-    <section id="Page3">
-
-      <h1>¡AD INFINITVM!</h1>
-      <p>Aquí tienes tu mensaje cifrado</p>
-
-    <input type='button' value='Nuevo mensaje' id="botonNuevoMensaje1">
-    </form>
-
-   <div id="Datum2" style="display:block;text-align:center;max-width:100%">
-    <!--Datum2 text-->
-    <h4>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
-      con fines militares, empleando 3 caracteres de desplazamiento?</h4>
-      <!--Datum 1 image-->
-    <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César"/>   
-    </div>
-
-  </section>  
-
-  <!--Fourth page-->
-  <section id="Page4">
-
-    <h1>¡AD INFINITVM!</h1>
-    <p3>Aquí tienes tu mensaje descifrado</p3>
-
-    <input type='button' value='Nuevo mensaje' id="botonNuevoMensaje2">
-    
-  <div id="Datum2" style="display:block;text-align:center;max-width:100%">
-    <!--Datum2 text-->
-    <h4>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución, 
-      con fines militares, empleando 3 caracteres de desplazamiento?</h4>
-      <!--Datum 1 image-->
-    <img src="Julius Caesar 3.jpg" />   
-    </div>
-  
-  </section>
-  
   <script src="index.js"></script>
 
   <footer>@cricy21 2020</footer>
 
   </body>
+
 </html>

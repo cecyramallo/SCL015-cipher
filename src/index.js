@@ -167,7 +167,7 @@ function decode(){
     document.getElementById("Page4").style.display = "block";
 });*/
 
-document.getElementById("botonNuevoMensaje1").addEventListener("click", function(){
+/*document.getElementById("botonNuevoMensaje1").addEventListener("click", function(){
     document.getElementById("Page3").style.display = "none";
     document.getElementById("Page2").style.display = "block";
 });
@@ -175,7 +175,7 @@ document.getElementById("botonNuevoMensaje1").addEventListener("click", function
 document.getElementById("botonNuevoMensaje2").addEventListener("click", function(){
     document.getElementById("Page4").style.display = "none";
     document.getElementById("Page2").style.display = "block";
-});
+});*/
 
 //console.log(cipher);
 

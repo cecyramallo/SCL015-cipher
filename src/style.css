@@ -30,7 +30,7 @@ body{
     padding-left: 8%;
 }
 
-/*Image 1*/
+/*Image 1, page1*/
 #figure1 {
     text-align: right;
     padding-right: 300%;
@@ -47,51 +47,7 @@ body{
     box-shadow: 0px 0px 15px #CAC198;
 }
 
-/*Text to say hi, incluiding user's name*/
-#Greeting {
-    color:#D32929;
-    text-align: center;
-    font-size: 50px;    
-    font-family: 'Caesar Dressing';
-    padding-top: 0%;
-    margin-bottom: 5%;
-}
-
-/*Image 2*/
-#figure2 {
-    text-align: left;
-    width: 10%;
-    font-family: 'Caesar Dressing';
-    color: #D32929;
-    float: left;
-    padding-top: 10%;
-    padding-left: 2%;
-}
-
-#figure2 img{
-    width: 150px;
-    height: 150px;
-    box-shadow: 0px 0px 15px #CAC198;
-}
-
-/*Image 3*/
-#figure3 {
-    text-align: right;
-    width: 10%;
-    font-family: 'Caesar Dressing';
-    color: #D32929;
-    float: right;
-    padding-top: 10%;
-    padding-right: 2%;
-}
-
-#figure3 img{
-    width: 150px;
-    height: 150px;
-    box-shadow: 0px 0px 15px #CAC198;
-    margin-left: -18%;
-}
-
+/*Specific box to write user's name*/
 #userName {
     display: inline-block;
     border-radius: 20px;
@@ -107,19 +63,17 @@ body{
     font-family: 'Caesar Dressing';
 }
 
-p {
-    color: #7F2122;
+/*Text to say hi, incluiding user's name*/
+#Greeting {
+    color:#D32929;
     text-align: center;
-    font-size: 100%;
-    font-family: 'Caesar Dressing';    
+    font-size: 50px;    
+    font-family: 'Caesar Dressing';
+    padding-top: 0%;
+    margin-bottom: 5%;
 }
 
-.Form {
-    display: inline-flexbox;
-    text-align: center;
-    padding-block-end: -30%;
-}
-
+/*Start, encode and decode buttons*/
 .button{
     display: inline-block;
     background-color: #CAC198;
@@ -136,6 +90,7 @@ p {
     font-family: 'Caesar Dressing';
 }
 
+/*Form to encode and decode*/
 #cipherForm {
     text-align: center;
     float: left;
@@ -143,6 +98,15 @@ p {
     margin-top: -30px;
 }
 
+/*Text lines on the form to encode and decode*/
+p {
+    color: #7F2122;
+    text-align: center;
+    font-size: 100%;
+    font-family: 'Caesar Dressing';    
+}
+
+/*Specific box to write user's original message*/
 #originalMessage{
     width: 100%;
     background-color: #E5DBB7;
@@ -152,6 +116,7 @@ p {
     border-radius: 20px;
 }
 
+/*Specific box to write or select an offset number*/
 #offsetNumber{
     width: 15%;
     height: 30px;
@@ -162,6 +127,7 @@ p {
     border-radius: 20px;
 }
 
+/*Specific box to view coded or decoded message*/
 #newMessage{
     width: 100%;
     background-color: #E5DBB7;
@@ -169,6 +135,48 @@ p {
     color: #7F2122;
     border: solid 3px #7F2122;
     border-radius: 20px;
+}
+
+/*Image 2, page 2*/
+#figure2 {
+    text-align: left;
+    width: 10%;
+    font-family: 'Caesar Dressing';
+    color: #D32929;
+    float: left;
+    padding-top: 10%;
+    padding-left: 4%;
+}
+
+#figure2 img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 15px #CAC198;
+}
+
+/*Image 3, page 2*/
+#figure3 {
+    text-align: right;
+    width: 10%;
+    font-family: 'Caesar Dressing';
+    color: #D32929;
+    float: right;
+    padding-top: 10%;
+    padding-right: 4%;
+}
+
+#figure3 img{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 15px #CAC198;
+    margin-left: -18%;
+}
+
+/*To align box for user's name and start button */
+.Form {
+    display: inline-flexbox;
+    text-align: center;
+    padding-block-end: -30%;
 }
 
 #Page2 {
@@ -181,14 +189,6 @@ p {
     flex-direction: row;
 }
 
-#Page3 {
-    display: none;
-} 
-
-#Page4 {
-    display: none;
-} 
-
 footer {
     text-align: center;
     color: #7F2122;
@@ -198,6 +198,10 @@ footer {
     display: inline-block;
     width: 100%;
 }
+
+
+
+
 
 /*h4 {
     color:#7F2122;
