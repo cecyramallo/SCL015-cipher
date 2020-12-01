@@ -49,13 +49,20 @@
     </section>
 
     <!--Second page-->
-    <section id="Page2">
+    <section id="Page2" class="style">
     
-    <!--Greeting-->
-    <h3 id="Greeting">¡AVE, USUARIO!</h3>
+    <!--Julius Caesar image 2-->
+      <figure id="figure2">
+        <img src="Julius Caesar 2.jpg" alt="Retrato de Julio César mirando hacia adelante"/> 
+          <figurecaption>¿Sabías que Julio César fue un político y general romano,
+          <br /> 
+          fundamental para la transición de la República al Imperio?</figurecaption>
+      </figure> 
 
     <!--Form to cipher-->    
     <form id="cipherForm">
+      <!--Greeting-->
+      <h3 id="Greeting">¡AVE, USUARIO!</h3>
       <p>Inserta tu mensaje. Por favor, no utilices la letra Ñ</p>
       <textarea id="originalMessage"></textarea>
       <p>¿Cuántos caracteres quieres desplazar?</p>
@@ -65,35 +72,26 @@
       <br/>      
       <input type='button' value='Cifrar' id="botonCifrar" onclick="code()" class="button">
       <input type='button' value='Descifrar' id="botonDescifrar" onclick="decode()" class="button">
-      <br/>
-      <br/>    
+      <br/>   
       <p>Aquí tienes tu mensaje cifrado</p>
       <textarea id="newMessage"></textarea>
     </form>
 
-      <!--Julius Caesar image 2-->
-        <figure id="figure2">
-          <img src="Julius Caesar 2.jpg" alt="Retrato de Julio César mirando hacia adelante"/> 
-            <article>¿Sabías que Julio César fue un político y general romano,
-            <br /> 
-            fundamental para la transición de la República al Imperio?</article>
-        </figure> 
-
       <!--Julius Caesar image 3-->
       <figure id="figure3">
-        <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César"/> 
-          <article>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución,
+        <img src="Julius Caesar 3.jpg" alt="Imagen de Julio César levantando el pulgar"/> 
+          <figurecaption>¿Sabías que Julio César inventó esta técnica de cifrado por sustitución,
             <br /> 
-            con fines militares, empleando 3 caracteres de desplazamiento?</article>
+            con fines militares, empleando 3 caracteres de desplazamiento?</figurecaption>
       </figure>         
       
   </section>
 
-  <!--Third page-->
-  <section id="Page3">
+    <!--Third page-->
+    <section id="Page3">
 
-    <h1>¡AD INFINITVM!</h1>
-    <p3>Aquí tienes tu mensaje cifrado</p3>
+      <h1>¡AD INFINITVM!</h1>
+      <p>Aquí tienes tu mensaje cifrado</p>
 
     <input type='button' value='Nuevo mensaje' id="botonNuevoMensaje1">
     </form>

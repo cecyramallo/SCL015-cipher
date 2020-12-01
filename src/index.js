@@ -3,6 +3,11 @@
 document.getElementById("startButton").addEventListener("click", function(){
     document.getElementById("Page1").style.display = "none";
     document.getElementById("Page2").style.display = "block";
+
+    let input = document.getElementById("userName");
+    let userName = input.value
+    console.log(userName)
+    document.getElementById("Greeting").innerHTML = "¡AVE, " + userName + "!";
 });
 
 function code(){
