@@ -16,7 +16,11 @@ El objetivo del proyecto es diseñar una aplicación web que permita al usuario 
 
 Esta aplicación web se concibe como una herramienta didáctica, dirigida a estudiantes de educación media y a cualquier persona con interés en Historia Antigua. 
 
-La imagen conceptual que inspiró el diseño del proyecto es esta foto del Foro de César, ubicado en el Foro Romano, que fue mandado a construir por Julio César entre el 54 y el 46 a. C. La parte superior del arco da la sensación de grandeza, mientras las tres columnas 
+La imagen conceptual que inspiró el diseño del proyecto es esta foto del arco del templo de Venus Genetrix en el Foro de César, ubicado en el Foro Romano, que fue mandado a construir por Julio César entre el 54 y el 46 a. C. Los capiteles de la parte superior del arco dan la sensación de grandeza, mientras las tres columnas de orden corintio otorgan 
 
 ![foro](Foro.jpg)
+
+
+
+
 
