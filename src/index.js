@@ -12,30 +12,30 @@ document.getElementById("startButton").addEventListener("click", function(){
 
 function code(){
     //Declare a variable for the original message, take its value and turn it into capital letters
-    let originalMessage = document.getElementById ("originalMessage").value.toUpperCase();
+    let originalMessage = document.getElementById("originalMessage").value.toUpperCase();
     //*console.log(originalMessage);
     //Declare a variable for the offset, take its value and turn it into an integer number
-    let offset = parseInt(document.getElementById ("offsetNumber").value);
+    let offset = parseInt(document.getElementById("offsetNumber").value);
     //console.log(offset);
     //Declare another variable for the final message
     let finalMessage = ""
     //Declare a for loop
     for (let i = 0; i < originalMessage.length; i++) {
-    //Obtain the ASCII code
-    let ascii = originalMessage.charCodeAt(i);
-    //console.log(ascii);
-    //Apply the Math formula to obtain the character's new ASCII code
-    let newAscii = (ascii -65 + offset) % 26 +65;
-    //console.log (newAscii);
-    //Declare an if conditional for the space character
-    if (ascii === 32){
-        newAscii = 32;
-    }
-    //Obtain the character of the new ASCII
-    let result = String.fromCharCode(newAscii);    
-    //console.log(result);
+        //Obtain the ASCII code
+        let ascii = originalMessage.charCodeAt(i);
+        //console.log(ascii);
+        //Apply the Math formula to obtain the character's new ASCII code
+        let newAscii = (ascii -65 + offset) % 26 +65;
+        //console.log (newAscii);
+        //Declare an if conditional for the space character
+        if (ascii === 32){
+            newAscii = 32;
+        }
+        //Obtain the character of the new ASCII
+        let result = String.fromCharCode(newAscii);    
+        //console.log(result);
     
-    finalMessage += result;
+        finalMessage += result;
 
     }
     
@@ -55,21 +55,21 @@ function decode(){
     let finalMessage = ""
     //Declare a for loop
     for (let i = 0; i < originalMessage.length; i++) {
-    //Obtain the ASCII code
-    let ascii = originalMessage.charCodeAt(i);
-    //console.log(ascii);
-    //Apply the Math formula to obtain the character's new ASCII code
-    let newAscii = (ascii +65 - offset) % 26 +65;
-    //console.log (newAscii);
-    //Declare an if conditional for the space character
-    if (ascii === 32){
-        newAscii = 32;
-    }
-    //Obtain the character of the new ASCII
-    let result = String.fromCharCode(newAscii);    
-    //console.log(result);
+        //Obtain the ASCII code
+        let ascii = originalMessage.charCodeAt(i);
+        //console.log(ascii);
+        //Apply the Math formula to obtain the character's new ASCII code
+        let newAscii = (ascii +65 - offset) % 26 +65;
+        //console.log (newAscii);
+        //Declare an if conditional for the space character
+        if (ascii === 32){
+            newAscii = 32;
+        }
+        //Obtain the character of the new ASCII
+        let result = String.fromCharCode(newAscii);    
+        //console.log(result);
 
-    finalMessage += result;
+        finalMessage += result;
     }
 
     document.getElementById("newMessage").innerHTML = finalMessage;
