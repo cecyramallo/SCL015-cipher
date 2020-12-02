@@ -1,4 +1,4 @@
-# Cifrado César
+# (Des)cifrador César
 
 ***
 
@@ -10,7 +10,7 @@ Como importante estratega militar, Julio César desarrolló este sistema de codi
 
 Hoy en día, el Cifrado César tiene poca aplicación práctica, pues la tecnología permite decodificar los mensajes con facilidad. Empero, es una buena primera aproximación al desarrollo de una aplicación web, integrando la programación en HTML, CSS y Javascript.
 
-## 1. UX Design
+## UX Design
 
 El objetivo del proyecto es diseñar una aplicación web que permita al usuario ingresar un texto y un número caracteres a ser desplazados (offset), para mostrar el mensaje descrifrado. A la vez, da la opción de ingresar un texto ya cifrado y un offset, para poder descifrarlo.
 
@@ -39,6 +39,11 @@ Se incluye aquí el prototipo realizado en Figma, el cual tuvo varias modificaci
 ![Figma04](Figma_04.jpg)
 
 Se realizaron iteraciones tanto del prototipo como de la aplicación web. Un usuario recomendó incluir un texto descriptivo en la primera pantalla, para entender de qué se trataba exactamente el proyecto y cuál era el modo de utilizar la interfaz.
+
+### Prototipo en Figma
+
+[(Des)cifrador César en Figma](https://www.figma.com/proto/083kgUrbuL6WenMKxdaN3H/Untitled?node-id=1%3A2&scaling=min-zoom)
+
 
 
 
